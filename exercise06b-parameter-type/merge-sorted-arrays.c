@@ -37,7 +37,7 @@ int main() {
     return 1;
   }
 
-  mergeSortedArrays(arr1, size1, arr2, size2, merged);
+  mergeSortedArrays(arr1, arr2, size1, size2, merged);
 
   printf("Merged array: ");
   for (int i = 0; i < size1 + size2; i++) {

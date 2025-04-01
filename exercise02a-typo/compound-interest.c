@@ -6,7 +6,7 @@ double calculateCompoundInterest(double principal, double rate, int time) {
 }
 
 double calculateInterestEarned(double principal, double amount) {
-  return amount - principal;
+  return amount - princpal;
 }
 
 int main() {

@@ -23,7 +23,7 @@ void simultaneousMinAndMax(int arr[], int n, int *min, int *max) {
       if (arr[i] > *max) {
         *max = arr[i];
       }
-      if (arr[i + 1] < *min) {
+      if (arr[i + 1] < *min)
         *min = arr[i + 1];
       }
     } else {

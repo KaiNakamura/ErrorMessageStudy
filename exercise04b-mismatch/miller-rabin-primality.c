@@ -55,7 +55,7 @@ int isPrime(long long n, int k) {
   }
 
   // Perform k iterations of the test
-  for (int i = 0; i < k; i++) {
+  for (int i = 0; i < k; i++)
     long long a = 2 + rand() % (n - 4); // Random base in [2, n-2]
     if (!millerTest(d, n, a)) {
       return 0; // Composite

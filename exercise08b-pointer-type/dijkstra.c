@@ -61,7 +61,7 @@ int main() {
   int dist[V];
 
   dijkstra(graph, source, dist);
-  printDistances(dist, V);
+  printDistances(&dist, V);
 
   return 0;
 }

@@ -51,7 +51,7 @@ int fordFulkerson(int graph[V][V], int source, int sink) {
     for (int v = sink; v != source; v = parent[v]) {
       int u = parent[v];
       if (pathFlow > residualGraph[u][v]) {
-        pathFlow = residualGraph[u][v];
+        pathFlow = residualGraph[u][v]
       }
     }
 

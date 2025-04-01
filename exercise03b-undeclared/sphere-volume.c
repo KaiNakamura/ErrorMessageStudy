@@ -1,10 +1,8 @@
 #include <math.h>
 #include <stdio.h>
 
-#define PI 3.14159265358979323846
-
 double sphereVolume(double radius) {
-  return (4.0 / 3.0) * PI * pow(radius, 3);
+  return (4.0 / 3.0) * pi * pow(radius, 3);
 }
 
 int main() {

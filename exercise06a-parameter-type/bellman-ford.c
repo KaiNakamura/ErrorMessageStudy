@@ -60,7 +60,7 @@ int main() {
   int dist[V];
 
   if (bellmanFord(edges, E, V, source, dist)) {
-    printDistances(dist, V);
+    printDistances(V, dist);
   } else {
     printf("Negative-weight cycle detected!\n");
   }

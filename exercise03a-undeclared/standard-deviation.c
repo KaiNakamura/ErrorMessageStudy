@@ -13,7 +13,6 @@ double calculateMean(int arr[], int size) {
 
 double calculateStandardDeviation(int arr[], int size) {
   double mean = calculateMean(arr, size);
-  double sumSquaredDifferences = 0.0;
 
   for (int i = 0; i < size; i++) {
     sumSquaredDifferences += pow(arr[i] - mean, 2);

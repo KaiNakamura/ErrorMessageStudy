@@ -19,7 +19,7 @@ int main() {
   double root1, root2;
   int hasRealRoots;
 
-  quadraticFormula(a, b, c, &root1, &root2, &hasRealRoots);
+  double result = quadraticFormula(a, b, c, &root1, &root2, &hasRealRoots);
   printf("Equation: %.2fx^2 + %.2fx + %.2f\n", a, b, c);
 
   if (hasRealRoots) {

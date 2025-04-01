@@ -12,7 +12,7 @@ int main() {
   double fahrenheit = 212.0;
   double celsius = 0.0;
 
-  printf("%.2f F = %.2f C\n", fahrenheit, fahrenheitToCelsius(fahrenheit));
+  printf("%.2f F = %.2f C\n", fahrenheit, fahrenheitToCelsius(fahreheit));
   printf("%.2f C = %.2f F\n", celsius, celsiusToFahrenheit(celsius));
 
   return 0;
