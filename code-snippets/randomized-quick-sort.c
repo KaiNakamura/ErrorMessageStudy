@@ -29,9 +29,9 @@ int randomizedPartition(int arr[], int low, int high) {
 
 void randomizedQuickSort(int arr[], int low, int high) {
   if (low < high) {
-    int pi = randomizedPartition(arr, low, high);
-    randomizedQuickSort(arr, low, pi - 1);
-    randomizedQuickSort(arr, pi + 1, high);
+    int i = randomizedPartition(arr, low, high);
+    randomizedQuickSort(arr, low, i - 1);
+    randomizedQuickSort(arr, i + 1, high);
   }
 }
 
