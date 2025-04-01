@@ -10,7 +10,7 @@ struct Edge {
   int src, dest, weight;
 };
 
-bool bellmanFord(struct Edge edges[], int numEdges, int source, int numVertices,
+bool bellmanFord(struct Edge edges[], int numEdges, int numVertices, int source,
                  int dist[]) {
   // Initialize distances from source to all vertices as infinite
   for (int i = 0; i < numVertices; i++) {
@@ -54,14 +54,12 @@ void printDistances(int dist[], int size) {
 }
 
 int main() {
-  // Graph edges
   struct Edge edges[E] = {{0, 1, 10}, {0, 5, 8},  {1, 3, 2},  {2, 1, 1},
                           {3, 2, -2}, {4, 1, -4}, {4, 3, -2}, {5, 4, 1}};
-
   int source = 0;
   int dist[V];
 
-  if (bellmanFord(edges, E, source, V, dist)) {
+  if (bellmanFord(edges, E, V, source, dist)) {
     printDistances(dist, V);
   } else {
     printf("Negative-weight cycle detected!\n");
