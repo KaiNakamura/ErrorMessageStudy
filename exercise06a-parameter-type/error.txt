@@ -1,0 +1,1 @@
+Error: expected 'int *' but argument is of type 'int'

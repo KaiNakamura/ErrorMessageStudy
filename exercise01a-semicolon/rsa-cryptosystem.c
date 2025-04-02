@@ -18,11 +18,10 @@ int modExp(int base, int exp, int mod) {
   base = base % mod;
 
   while (exp > 0) {
-    // If exp is odd, multiply base with result
     if (exp % 2 == 1) {
       result = (result * base) % mod;
     }
-    exp = exp >> 1; // Divide exp by 2
+    exp = exp >> 1;
     base = (base * base) % mod;
   }
   return result;
