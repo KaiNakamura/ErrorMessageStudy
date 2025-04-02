@@ -80,8 +80,8 @@ int main() {
 
   int source = 0, sink = 7;
 
-  printf("The maximum possible flow is %d\n",
-         fordFulkerson(graph, source, sink));
+  int maxFlow = fordFulkerson(graph, source, sink);
+  printf("The maximum possible flow is %d\n", maxFlow);
 
   return 0;
 }

@@ -8,11 +8,14 @@ double sphereVolume(double radius) {
 }
 
 int main() {
-  double r1 = 3.0;
-  double r2 = 5.0;
+  double radius1 = 3.0;
+  double radius2 = 5.0;
 
-  printf("Volume for radius of %.2f: %.2f\n", r1, sphereVolume(r1));
-  printf("Volume for radius of %.2f: %.2f\n", r2, sphereVolume(r2));
+  double volume1 = sphereVolume(radius1);
+  double volume2 = sphereVolume(radius2);
+
+  printf("Volume for radius of %.2f: %.2f\n", radius1, volume1);
+  printf("Volume for radius of %.2f: %.2f\n", radius2, volume2);
 
   return 0;
 }

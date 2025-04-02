@@ -9,7 +9,8 @@ unsigned long long factorial(int n) {
 
 int main() {
   int number = 10;
-  printf("Factorial of %d is %llu\n", number, factorial(number));
+  int result = factorial(number);
+  printf("Factorial of %d is %llu\n", number, result);
 
   return 0;
 }
