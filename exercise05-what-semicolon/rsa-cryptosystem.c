@@ -35,7 +35,7 @@ int modInverse(int e, int phi) {
   while (newR != 0) {
     int quotient = r / newR;
     int temp = t;
-    t = newT
+    t = newT;
     newT = temp - quotient * newT;
 
     temp = r;
@@ -48,7 +48,7 @@ int modInverse(int e, int phi) {
     return -1;
   }
   if (t < 0) {
-    t += phi;
+    t += phi
   }
   return t;
 }

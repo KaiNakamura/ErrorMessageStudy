@@ -7,7 +7,7 @@ void quadraticFormula(double a, double b, double c, double *root1,
 
   if (discriminant >= 0) {
     *hasRealRoots = 1;
-    *root1 = (-b + sqrt(discriminant)) / (2 * a);
+    *root1 = (-b + sqrt(discriminant) / (2 * a);
     *root2 = (-b - sqrt(discriminant)) / (2 * a);
   } else {
     *hasRealRoots = 0;
@@ -19,7 +19,7 @@ int main() {
   double root1, root2;
   int hasRealRoots;
 
-  double result = quadraticFormula(a, b, c, &root1, &root2, &hasRealRoots);
+  quadraticFormula(a, b, c, &root1, &root2, &hasRealRoots);
   printf("Equation: %.2fx^2 + %.2fx + %.2f\n", a, b, c);
 
   if (hasRealRoots) {

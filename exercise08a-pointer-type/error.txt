@@ -1,1 +1,0 @@
-Error: assignment to 'int *' from 'int' makes pointer from integer without a cast

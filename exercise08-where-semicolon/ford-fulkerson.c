@@ -13,7 +13,7 @@ bool bfs(int residualGraph[V][V], int source, int sink, int parent[]) {
   int queue[V], front = 0, rear = 0;
   queue[rear++] = source;
   visited[source] = true;
-  parent[source] = -1;
+  parent[source] = -1
 
   // Standard BFS loop
   while (front < rear) {
@@ -51,7 +51,7 @@ int fordFulkerson(int graph[V][V], int source, int sink) {
     for (int v = sink; v != source; v = parent[v]) {
       int u = parent[v];
       if (pathFlow > residualGraph[u][v]) {
-        pathFlow = residualGraph[u][v]
+        pathFlow = residualGraph[u][v];
       }
     }
 
@@ -80,8 +80,8 @@ int main() {
 
   int source = 0, sink = 7;
 
-  printf("The maximum possible flow is %d\n",
-         fordFulkerson(graph, source, sink));
+  int maxFlow = fordFulkerson(graph, source, sink);
+  printf("The maximum possible flow is %d\n", maxFlow);
 
   return 0;
 }
